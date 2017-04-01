@@ -38,8 +38,16 @@
 // //searchss a string for a specified value, and replaces it with a new value you choose
 // console.log(string.replace(" ", "SPACE"))
 
-var text = " java script!"
+// var text = "java script!"
 
-var regex = /Java\s*Script/ig
+// var regex = /java\s*script/ig
 
-console.log(text.replace(regex, "java"))
+// console.log(text.replace(regex, "Guavascrap"))
+
+function validateEmail() {
+	var emailInput = document.getElementById('emailInput').value
+	var regex = /^[a-z0-9._%-]+@[a-z0-9.-]+\.[a-z]{2,5}$/
+	console.log(regex.test(emailInput))
+}
+
+document.getElementById("button").addEventListener("click", validateEmail,false)
