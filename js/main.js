@@ -21,20 +21,25 @@
 // el.addEventListener('click', domListenerEvent(), false)
 
 
-var string = "hey whats up hello"
+// var string = "hey whats up hello"
 
-//given a number, returns the character at that specific index in a string
-console.log(string.charAt("7"))
+// //given a number, returns the character at that specific index in a string
+// console.log(string.charAt("7"))
 
-//finds the first occurrence of a specified vlaue in a string
-console.log(string.indexOf("w"))
+// //finds the first occurrence of a specified vlaue in a string
+// console.log(string.indexOf("w"))
 
-//used to split a string into an array of substrings, and returns the new array
-console.log(string.split("hello"))
+// //used to split a string into an array of substrings, and returns the new array
+// console.log(string.split("hello"))
 
-//removes whitespace from both sides of a string
-console.log(string.trim(""))
+// //removes whitespace from both sides of a string
+// console.log(string.trim(""))
 
-//searchss a string for a specified value, and replaces it with a new value you choose
-console.log(string.replace(" ", "SPACE"))
+// //searchss a string for a specified value, and replaces it with a new value you choose
+// console.log(string.replace(" ", "SPACE"))
 
+var text = " java script!"
+
+var regex = /Java\s*Script/ig
+
+console.log(text.replace(regex, "java"))
