@@ -6,6 +6,16 @@
 // console.log (pickName)
 
 // var today = new Date()
+// today.getFullYear()
 
-// console.log(today.getFullYear())
+// setTimeout(function(){console.log(today.getFullYear()); }, 2000);
+// }
 
+var el = document.getElementById('body')
+var today = new Date()
+function domListenerEvent() {
+
+el.textContent = today.getFullYear()
+}
+
+el.addEventListener('click', domListenerEvent(), false)
